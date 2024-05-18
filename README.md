@@ -4,7 +4,7 @@ Simulacion de un sistema acoplado de resortes y dos masas de forma horizontal
 
 ## Ejecucion
 El programa se encuentra publicado con github pages, para un facil acceso, se accede a la siguiente url:
-* [Sistema de Dos Resortes](https://sebastiantuquerrezg.github.io/Simulacion-Sistema-Acoplado/)
+* [Sistema de 2 Masas Acopladas Por 3 Resortes](https://sebastiantuquerrezg.github.io/Simulacion-Sistema-Acoplado/)
 
 O para ejecutar desde archivo, es necesario tener instalada la extension live server de Visual Studio Code e iniciar el servidor desde el archivo 'index.html' para un correcto funcionamiento.
 

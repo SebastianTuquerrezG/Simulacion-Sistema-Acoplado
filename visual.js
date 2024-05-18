@@ -43,7 +43,7 @@ let tracePosicion1 = {
   x: ejeT,
   y: ejeX1,
   mode: "lines",
-  name: "Posición X1 (m)",
+  name: "X1 (m)",
   line: {
     color: "rgb(1, 148, 254)",
   },
@@ -52,7 +52,7 @@ let tracePosicion2 = {
   x: ejeT,
   y: ejeX2,
   mode: "lines",
-  name: "Posición X2 (m)",
+  name: "X2 (m)",
   line: {
     color: "rgb(199,21,133)",
   },
@@ -87,9 +87,7 @@ let layout = {
   xaxis: {
     title: "Tiempo",
   },
-  yaxis: {
-    title: "Valor",
-  },
+  yaxis: {},
 };
 
 // Crear el gráfico con Plotly
@@ -118,10 +116,7 @@ function botonesControl() {
   button = createButton("Simular");
   button.position(Xmax - 400, 70);
   button.mousePressed(() => {
-    if (
-      valorX10 !== 0 ||
-      valorX20 !== 0 
-    ) {
+    if (valorX10 !== 0 || valorX20 !== 0) {
       //ValorV0 !== 0) && valorFo === 0) || valorFo > 0) {
       simular = true;
     }
@@ -285,7 +280,7 @@ function entorno() {
   fill(0); // Establece el color de relleno del texto a negro
   stroke(0); // Establece el color del contorno del texto a negro
   textSize(30);
-  text("Simulación dos masas", Xmax / 2 - 100, 30);
+  text("Simulación dos masas acopladas por resortes", Xmax / 2 - 300, 30);
   textSize(20);
   text("ω1\u2080 =" + W10.toFixed(2) + " rad/seg", bordTxtX, bordTxtY - 40);
   text("ω2\u2080 =" + W20.toFixed(2) + " rad/seg", bordTxtX, bordTxtY - 10);
@@ -416,7 +411,7 @@ function armonico() {
       "cos(" +
       W20.toFixed(2) +
       "t)",
-    bordTxtX ,
+    bordTxtX,
     270
   );
   text(
@@ -429,7 +424,7 @@ function armonico() {
       "cos(" +
       W20.toFixed(2) +
       "t)",
-    bordTxtX ,
+    bordTxtX,
     300
   );
 
